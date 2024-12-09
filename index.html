@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Projetos de Desenvolvimento</title>
+
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-pzjw8f+ua7Kw1TIq0n5cWyyiv1+6pSTl+7zDgs4k+qQW8a9/n8nU3zGHs4n7D3xB" crossorigin="anonymous">
+    
+    <!-- Link para o CSS personalizado -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <header class="hero-section">
+        <div class="container text-center">
+            <h1>Bem-vindo ao meu Portfólio</h1>
+            <p>Projetos desenvolvidos com <strong>Bootstrap</strong> e <strong>jQuery</strong>.</p>
+        </div>
+    </header>
+
+    <!-- Seção de Projetos -->
+    <section id="projetos" class="projects-section text-center py-5">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Projeto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 1</h5>
+                            <p class="card-text">Descrição curta sobre o Projeto 1.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalProjeto1">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Projeto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 2</h5>
+                            <p class="card-text">Descrição curta sobre o Projeto 2.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalProjeto2">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Projeto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 3</h5>
+                            <p class="card-text">Descrição curta sobre o Projeto 3.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalProjeto3">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modais -->
+    <div class="modal fade" id="modalProjeto1" tabindex="-1" role="dialog" aria-labelledby="modalProjeto1Label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProjeto1Label">Projeto 1 - Detalhes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/500" alt="Imagem Projeto 1">
+                    <p>Aqui estão mais informações sobre o Projeto 1, incluindo tecnologias utilizadas e o impacto do projeto.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Meu Portfólio | Desenvolvido com Bootstrap e jQuery</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zyLPuU5cv5WRUYPpS1h8a0i/7EM2xx5kV3oJbXrk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-KJ3o2DKtIkvYIKXjN2aD0vDbrw7V4ne1g7Kg9T6Xx0pu8gZYbOpY5R42gHkGeC7l" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0n5cWyyiv1+6pSTl+7zDgs4k+qQW8a9/n8nU3zGHs4n7D3xB" crossorigin="anonymous"></script>
+
+    <!-- Link para o JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+
+</html>
