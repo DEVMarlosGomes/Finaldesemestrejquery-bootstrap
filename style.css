@@ -1,6 +1,6 @@
 /* Estilos para a seção hero */
 .hero-section {
-    background-color: #343a40;
+    background-color: #c50202;
     color: white;
     padding: 100px 0;
     text-align: center;
@@ -17,7 +17,7 @@
 
 /* Estilos para a seção de projetos */
 .projects-section {
-    background-color: #f8f9fa;
+    background-color: #ececec;
 }
 
 .projects-section .section-title {
@@ -42,11 +42,18 @@
     object-fit: cover;
 }
 
-/* Estilos para o rodapé */
+/*RODAPÉ*/
+
 footer {
-    background-color: #343a40;
-    color: white;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 15px;
+    width: auto;
+    background-color: #c50202;
+    color: white;
+    font-weight: bold; /* Negrito no rodapé */
+    padding-inline-end: 50px;
 }
 
 /* Responsividade */
