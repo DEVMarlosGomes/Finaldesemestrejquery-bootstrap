@@ -1,0 +1,34 @@
+<!-- Página usando JavaScript puro -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Puro</title>
+    <style>
+        #texto {
+            display: none;
+            margin-top: 10px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button id="botao">Mostrar Texto</button>
+    <p id="texto">Este texto está sendo exibido com JavaScript puro!</p>
+
+    <script>
+        document.getElementById("botao").addEventListener("click", function() {
+            // Este código adiciona um ouvinte de evento ao botão, para executar uma função ao ser clicado.
+            const texto = document.getElementById("texto");
+            // Obtém o elemento com ID 'texto' para manipulá-lo dentro da função.
+            if (texto.style.display === "none") {
+                // Verifica se o texto está escondido, alternando sua exibição entre 'block' e 'none'.
+                texto.style.display = "block";
+            } else {
+                texto.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>

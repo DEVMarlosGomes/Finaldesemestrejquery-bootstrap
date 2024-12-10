@@ -1,0 +1,30 @@
+<!-- Página usando jQuery -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Com jQuery</title>
+    <style>
+        #texto {
+            display: none;
+            margin-top: 10px;
+            color: green;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Inclui a biblioteca jQuery, necessária para o funcionamento do código abaixo. -->
+</head>
+<body>
+    <button id="botao">Mostrar Texto</button>
+    <p id="texto">Este texto está sendo exibido com jQuery!</p>
+
+    <script>
+        // Adiciona um ouvinte de evento ao botão usando jQuery, simplificando o código em relação ao JavaScript puro
+        $("#botao").click(function() {
+            // Alterna automaticamente entre mostrar e esconder o texto usando a função 'toggle' do jQuery
+            $("#texto").toggle();
+        });
+    </script>
+</body>
+</html>
