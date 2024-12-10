@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Define o conjunto de caracteres para o documento, garantindo a exibição correta dos caracteres especiais. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva em dispositivos móveis. -->
+  <title>Sem Bootstrap</title> <!-- Define o título da página exibido na aba do navegador. -->
+  <style>
+    body {
+      font-family: Arial, sans-serif; /* Define a fonte do texto como Arial ou uma fonte genérica sans-serif. */
+    }
+    .container {
+      width: 80%; /* Define a largura do contêiner como 80% da largura da tela. */
+      margin: auto; /* Centraliza o contêiner horizontalmente. */
+      padding: 20px; /* Adiciona 20 pixels de espaço interno em todas as direções dentro do contêiner. */
+    }
+    .button {
+      background-color: blue; /* Define a cor de fundo do botão como azul. */
+      color: white; /* Define a cor do texto do botão como branco. */
+      padding: 10px 20px; /* Adiciona 10 pixels de espaço interno na parte superior e inferior e 20 pixels nas laterais. */
+      border: none; /* Remove a borda do botão. */
+      cursor: pointer; /* Muda o cursor para uma mãozinha ao passar o mouse sobre o botão. */
+    }
+    @media (max-width: 768px) {
+      .container {
+        width: 100%; /* Torna a largura do contêiner 100% em telas menores que 768 pixels. */
+        padding: 10px; /* Reduz o espaço interno do contêiner em telas menores. */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bem-vindo</h1> <!-- Exibe um título de nível 1. -->
+    <button class="button">Clique aqui</button> <!-- Exibe um botão com a classe "button". -->
+  </div>
+</body>
+</html>
