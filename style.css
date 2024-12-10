@@ -1,72 +1,123 @@
-/* Estilos para a seção hero */
+/* -----------------------------------------------
+    Definindo a fonte padrão
+----------------------------------------------- */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* -----------------------------------------------
+    Estilos para a seção Hero
+----------------------------------------------- */
 .hero-section {
-    background-color: #c50202;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
+  background-color: #d8b800; /* Verde sucesso */
+  color: white;
+  padding: 100px 0;
+  text-align: center;
 }
 
 .hero-section h1 {
-    font-size: 3rem;
-    font-weight: bold;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 .hero-section p {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
-/* Estilos para a seção de projetos */
+/* -----------------------------------------------
+    Estilos para a seção de Projetos
+----------------------------------------------- */
 .projects-section {
-    background-color: #ececec;
+  background-color: #f1f8f6; /* Verde claro */
 }
 
 .projects-section .section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 50px;
 }
 
 .card {
-    border: none;
-    margin-bottom: 30px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  border: none;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
-    height: 200px;
-    object-fit: cover;
+  height: 200px;
+  object-fit: cover;
 }
 
-/*RODAPÉ*/
+/* -----------------------------------------------
+    Estilos para a Navbar
+----------------------------------------------- */
+.navbar {
+  transition: background-color 0.3s ease;
+}
 
+.navbar-dark .navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 400;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.navbar-dark .navbar-nav .btn {
+  font-weight: 400;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link.btn-outline-light {
+  background-color: transparent;
+  border-color: white;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link.btn-outline-light:hover {
+  background-color: #000000;
+  color: #d8b800;
+}
+
+/* -----------------------------------------------
+    Estilos para o Rodapé
+----------------------------------------------- */
 footer {
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 15px;
-    width: auto;
-    background-color: #c50202;
-    color: white;
-    font-weight: bold; /* Negrito no rodapé */
-    padding-inline-end: 50px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 15px;
+  background-color: #d8b800; /* Verde sucesso */
+  color: white;
+  font-weight: 500;
 }
 
-/* Responsividade */
+/* -----------------------------------------------
+    Responsividade para dispositivos móveis
+----------------------------------------------- */
 @media (max-width: 768px) {
-    .hero-section h1 {
-        font-size: 2rem;
-    }
+  .hero-section h1 {
+    font-size: 2rem;
+  }
 
-    .hero-section p {
-        font-size: 1rem;
-    }
+  .hero-section p {
+    font-size: 1rem;
+  }
 
-    .projects-section .section-title {
-        font-size: 2rem;
-    }
+  .projects-section .section-title {
+    font-size: 2rem;
+  }
 }
