@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card de Perfil Dinâmico</title>
+
+  <style>
+    /* Estilos básicos */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-input:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 20px;
+      margin: 10px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .card .card-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .card .card-text {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Crie um Card de Perfil</h2>
+
+    <!-- Formulário para criar o card -->
+    <input type="text" id="nome" class="form-input" placeholder="Seu nome">
+    <input type="url" id="foto" class="form-input" placeholder="URL da foto de perfil">
+    <textarea id="descricao" class="form-input" placeholder="Sobre você" rows="4"></textarea>
+    <button id="criarCard">Criar Card</button>
+
+    <h3>Cards Criados</h3>
+    <div id="cardsContainer">
+      <!-- Cards serão adicionados aqui -->
+    </div>
+  </div>
+
+  <script>
+    // Função para criar o card dinamicamente
+    document.getElementById('criarCard').addEventListener('click', function() {
+      const nome = document.getElementById('nome').value;
+      const foto = document.getElementById('foto').value;
+      const descricao = document.getElementById('descricao').value;
+
+      // Verificar se todos os campos estão preenchidos
+      if (nome && foto && descricao) {
+        // Criar o card
+        const card = document.createElement('div');
+        card.classList.add('card');
+
+        // HTML do card
+        card.innerHTML = `
+          <img src="${foto}" alt="${nome}">
+          <div class="card-title">${nome}</div>
+          <div class="card-text">${descricao}</div>
+        `;
+
+        // Adicionar animação de entrada
+        setTimeout(() => card.classList.add('show'), 10);
+
+        // Adicionar o card ao container
+        document.getElementById('cardsContainer').prepend(card);
+
+        // Limpar os campos do formulário
+        document.getElementById('nome').value = '';
+        document.getElementById('foto').value = '';
+        document.getElementById('descricao').value = '';
+      } else {
+        alert('Por favor, preencha todos os campos!');
+      }
+    });
+  </script>
+
+</body>
+</html>
