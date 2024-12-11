@@ -1,11 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOOTSTRAP - JQUERY</title>
-</head>
-<body>
+    <title>BOOTSTRAP E JQUERY</title>
+
+    <!-- Link do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            padding-top: 60px; /* Espaço para a navbar fixa */
+        }
+
+        .navbar-custom {
+            background-color: #ff2a1f; /* Vermelho */
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-custom .navbar-brand:hover,
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .btn-custom {
+            background-color: #ff2a1f; /* Vermelho */
+            color: white;
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #ff1a18; /* Tom mais escuro de vermelho */
+            transform: scale(1.1);
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+
+        footer {
+            background-color: #ff2a1f;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            margin-bottom: 1px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;  /* Alinha os botões horizontalmente */
+            gap: 15px;
+            flex-wrap: wrap;  /* Garante que os botões quebrem linha em telas menores */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de Navegação (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <!-- Centralizando o logo -->
+            <a class="navbar-brand mx-auto" href="#">
+                <img src="/SENAI_São_Paulo_logo.png" alt="Logo SENAI">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="container">
+        <h1>Bem-vindo ao site de BOOTSTRAP E JQUERY</h1>
+        
+        <!-- Botões na horizontal -->
+        <div class="btn-group">
+            <a href="Com-JQuery-e-Bootstrap.html" class="btn btn-custom">Com jQuery e Bootstrap</a>
+            <a href="ComBootstrap.HTML" class="btn btn-custom">Com Bootstrap</a>
+            <a href="SemBootstrap.HTML" class="btn btn-custom">Sem Bootstrap</a>
+            <a href="JavaScriptPuro.HTML" class="btn btn-custom">JavaScript Puro</a>
+            <a href="ComJQuery.HTML" class="btn btn-custom">Com jQuery</a>
+            <a href="Sem-Bootstrap-e-JQUERY.html" class="btn btn-custom">Sem jQuery e Bootstrap</a>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 BOOTSTRAP E JQUERY - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Link do Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
